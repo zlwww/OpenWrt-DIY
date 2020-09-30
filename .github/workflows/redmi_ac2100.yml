@@ -18,7 +18,7 @@ on:
     branches:
       - main
     paths:
-      - 'config/redmi_ac2100.config'
+      - 'config/mi_ac2100.config'
   schedule:
     - cron: 0 4 * * 5
 #  watch:
@@ -31,7 +31,7 @@ env:
   CONFIG_FILE: config/redmi_ac2100.config
   DIY_P1_SH: scripts/diy-part1.sh
   DIY_P2_SH: scripts/diy-part2.sh
-  SSH_ACTIONS: false
+  SSH_ACTIONS: true
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: true
