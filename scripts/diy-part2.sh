@@ -33,6 +33,17 @@ popd
 git clone --depth=1 https://github.com/BoringCat/luci-app-mentohust
 git clone --depth=1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk
 
+# Add OpenClash
+git clone --depth=1 -b master https://github.com/vernesong/OpenClash
+
+# Add luci-app-jd-dailybonus
+git clone --depth=1 https://github.com/jerrykuku/node-request
+git clone --depth=1 https://github.com/jerrykuku/luci-app-jd-dailybonus
+
+# Add luci-app-adguardhome
+svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome
+svn co https://github.com/Lienol/openwrt/trunk/package/diy/adguardhome
+
 # Add ServerChan
 git clone --depth=1 https://github.com/tty228/luci-app-serverchan
 

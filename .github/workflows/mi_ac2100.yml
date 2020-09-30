@@ -31,7 +31,6 @@ env:
   CONFIG_FILE: config/mi_ac2100.config
   DIY_P1_SH: scripts/diy-part1.sh
   DIY_P2_SH: scripts/diy-part2.sh
-  DIY_P3_SH: scripts/diy-part3.sh
   SSH_ACTIONS: true
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true

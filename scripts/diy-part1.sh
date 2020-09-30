@@ -19,3 +19,24 @@ sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.
 # Add luci-theme-argon
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
 rm -rf ../lean/luci-theme-argon
+
+# Uncomment a feed source
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+
+# Define My Package
+git clone https://github.com/fw876/helloworld.git package/lean/luci-app-ssr-plus
+
+# Add OpenClash
+git clone --depth=1 -b master https://github.com/vernesong/OpenClash
+
+# Add luci-app-jd-dailybonus
+git clone --depth=1 https://github.com/jerrykuku/node-request
+git clone --depth=1 https://github.com/jerrykuku/luci-app-jd-dailybonus
+
+# Add luci-app-adguardhome
+svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome
+svn co https://github.com/Lienol/openwrt/trunk/package/diy/adguardhome
+
+# Add luci-app-onliner (need luci-app-nlbwmon)
+git clone --depth=1 https://github.com/rufengsuixing/luci-app-onliner
