@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build Redmi AC2100 OpenWrt
+name: Build mi AC2100 OpenWrt
 
 on:
   repository_dispatch:
@@ -21,8 +21,8 @@ on:
       - 'config/mi_ac2100.config'
   schedule:
     - cron: 0 4 * * 5
-#  watch:
-#    types: started
+  watch:
+    types: started
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
